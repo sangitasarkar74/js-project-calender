@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(4, 4, 41);
+    color: rgb(241, 239, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.calendar {
+    width: 45rem;
+    height: 45rem;
+    background-color: rgb(48, 51, 44);
+    box-shadow: 0 0.3rem 5rem black;
+    border-radius: 10px;
+}
+
+.month {
+    width: 100%;
+    height: 12rem;
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    text-shadow: 0.3rem .5rem rgba(0, 0, 0, 0.5);
+}
+
+.month i {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.month h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.month p {
+    font-size: 1.6rem;
+
+}
+
+.weekdays {
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+
+}
+
+.weekdays div {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    display: grid;
+    align-items: center;
+
+}
+
+.days {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    /* text-align: center; */
+    align-items: center;
+    padding: 0.2rem;
+
+}
+
+.days div {
+    font-size: 20px;
+    height: 5rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s;
+    text-align: center;
+    display: grid;
+    align-items: center;
+
+}
+
+.days div:hover:not(.today) {
+    background-color: black;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+    opacity: 0.5;
+}
+
+.today {
+    background-color: rgb(4, 26, 51);
+    border: 1px solid black;
+}
