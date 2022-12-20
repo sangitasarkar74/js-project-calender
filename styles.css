@@ -22,7 +22,7 @@ html {
 
 .calendar {
     width: 45rem;
-    height: 45rem;
+    height: 50rem;
     background-color: rgb(48, 51, 44);
     box-shadow: 0 0.3rem 5rem black;
     border-radius: 10px;
